@@ -234,3 +234,26 @@
         }
     }
 }
+
+/*** index ***/
+
+h2 { text-align: center; }
+
+#what {
+    @include outer-container;
+    li { @include span-columns(4); }
+    li:nth-child(3n) { @include omega; }
+}
+
+#who {
+    @include outer-container;
+    li { @include span-columns(4); }
+    li:nth-child(3n) { @include omega; }
+}
+
+#contact {
+    @include outer-container;
+
+    #contact--organizations { @include span-columns(6); }
+    #contact--volunteers { @include span-columns(6); }
+}
