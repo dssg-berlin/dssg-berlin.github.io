@@ -245,8 +245,26 @@ h2 { text-align: center; }
         @include span-columns(4);
         height: 120px;
         text-align: center;
+
+        i {
+            display: block;
+            height: 80px;
+            font-size: 70px;
+        }
+
     }
     li:nth-child(3n) { @include omega; }
+}
+
+#what--impact-prediction {
+    i {
+        color: green;
+    }
+}
+#what--demand-prediction {
+    i {
+        color: red;
+    }
 }
 
 #who {
