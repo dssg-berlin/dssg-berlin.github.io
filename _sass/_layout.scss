@@ -241,7 +241,11 @@ h2 { text-align: center; }
 
 #what {
     @include outer-container;
-    li { @include span-columns(4); }
+    li {
+        @include span-columns(4);
+        height: 120px;
+        text-align: center;
+    }
     li:nth-child(3n) { @include omega; }
 }
 
