@@ -8,3 +8,7 @@ gem 'github-pages', versions['github-pages']
 
 gem 'bourbon'
 gem 'neat'
+
+gem 'guard'
+gem 'guard-jekyll-plus'
+gem 'guard-livereload'
