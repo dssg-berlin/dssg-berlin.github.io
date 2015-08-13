@@ -4,11 +4,10 @@
 @charset "utf-8";
 
 @import 'bourbon';
-@import 'neat';
 
 
 // Our variables
-$base-font-family: Helvetica, Arial, sans-serif;
+$base-font-family: "Open Sans",Helvetica, Arial, sans-serif;
 $base-font-size:   16px;
 $small-font-size:  $base-font-size * 0.875;
 $base-line-height: 1.5;
@@ -23,28 +22,17 @@ $grey-color:       #828282;
 $grey-color-light: lighten($grey-color, 40%);
 $grey-color-dark:  darken($grey-color, 25%);
 
-// Width of the content area
-$content-width:    800px;
+// Grid settings
+@import 'neat-helpers';
+$grid-columns: 12;
+$max-width:    800px;
+$visual-grid: true;
 
-$on-palm:          600px;
-$on-laptop:        800px;
+$palm: new-breakpoint(max-width 500px 4);
+$laptop: new-breakpoint(min-width 500px max-width 800px 8);
+$desktop: new-breakpoint(min-width 800px 12);
 
-
-
-// Using media queries with like this:
-// @include media-query($on-palm) {
-//     .wrapper {
-//         padding-right: $spacing-unit / 2;
-//         padding-left: $spacing-unit / 2;
-//     }
-// }
-@mixin media-query($device) {
-    @media screen and (max-width: $device) {
-        @content;
-    }
-}
-
-
+@import 'neat';
 
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import

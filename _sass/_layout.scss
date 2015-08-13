@@ -1,4 +1,11 @@
 /**
+ * Wrapper
+ */
+.wrapper {
+    @include outer-container;
+}
+
+/**
  * Site header
  */
 .site-header {
@@ -41,7 +48,7 @@
         }
     }
 
-    @include media-query($on-palm) {
+    @include media($palm) {
         position: absolute;
         top: 9px;
         right: 30px;
@@ -111,7 +118,7 @@
     font-size: 15px;
     color: $grey-color;
     margin-left: -$spacing-unit / 2;
-    @extend %clearfix;
+    @include clearfix;
 }
 
 .footer-col {
@@ -135,7 +142,7 @@
     width:         calc(45% - (#{$spacing-unit} / 2));
 }
 
-@include media-query($on-laptop) {
+@include media($laptop) {
     .footer-col-1,
     .footer-col-2 {
         width: -webkit-calc(50% - (#{$spacing-unit} / 2));
@@ -148,7 +155,7 @@
     }
 }
 
-@include media-query($on-palm) {
+@include media($palm) {
     .footer-col {
         float: none;
         width: -webkit-calc(100% - (#{$spacing-unit} / 2));
@@ -202,7 +209,7 @@
     letter-spacing: -1px;
     line-height: 1;
 
-    @include media-query($on-laptop) {
+    @include media($laptop) {
         font-size: 36px;
     }
 }
@@ -213,7 +220,7 @@
     h2 {
         font-size: 32px;
 
-        @include media-query($on-laptop) {
+        @include media($laptop) {
             font-size: 28px;
         }
     }
@@ -221,7 +228,7 @@
     h3 {
         font-size: 26px;
 
-        @include media-query($on-laptop) {
+        @include media($laptop) {
             font-size: 22px;
         }
     }
@@ -229,7 +236,7 @@
     h4 {
         font-size: 20px;
 
-        @include media-query($on-laptop) {
+        @include media($laptop) {
             font-size: 18px;
         }
     }
@@ -240,9 +247,11 @@
 h2 { text-align: center; }
 
 #what {
-    @include outer-container;
+    @include row;
     li {
         @include span-columns(4);
+        @include media($palm) { @include span-columns(4); }
+        @include media($laptop) { @include span-columns(4); }
         height: 120px;
         text-align: center;
 
@@ -250,32 +259,45 @@ h2 { text-align: center; }
             display: block;
             height: 80px;
             font-size: 70px;
+            @include media($laptop) {
+                height: 70px;
+                font-size: 60px;
+            }
         }
 
     }
-    li:nth-child(3n) { @include omega; }
+    li:nth-child(3n) { @include media($desktop) { @include omega; } }
+    li:nth-child(2n) { @include media($laptop) { @include omega; } }
 }
 
 #what--impact-prediction {
     i {
-        color: green;
+        // color: green;
     }
 }
 #what--demand-prediction {
     i {
-        color: red;
+        // color: red;
     }
 }
 
 #who {
-    @include outer-container;
-    li { @include span-columns(4); }
+    @include row;
+    li {
+        @include span-columns(4);
+        @include media($palm) {
+            @include span-columns(4);
+        }
+    }
     li:nth-child(3n) { @include omega; }
 }
 
 #contact {
-    @include outer-container;
-
-    #contact--organizations { @include span-columns(6); }
-    #contact--volunteers { @include span-columns(6); }
+    @include row;
+    #contact--organizations, #contact--organizations {
+        @include span-columns(6);
+        @include media($palm) {
+            @include span-columns(4);
+        }
+    }
 }
