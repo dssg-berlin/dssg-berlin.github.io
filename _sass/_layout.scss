@@ -3,6 +3,7 @@
  */
 .wrapper {
     @include outer-container;
+    padding: 0 $spacing-unit/2;
 }
 
 /**
