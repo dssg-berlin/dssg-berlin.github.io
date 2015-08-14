@@ -1,0 +1,361 @@
+/**
+ * Wrapper
+ */
+.wrapper {
+    @include outer-container;
+}
+
+/**
+ * Site header
+ */
+.site-header {
+    border-top: 5px solid $grey-color-dark;
+    border-bottom: 1px solid $grey-color-light;
+    min-height: 56px;
+
+    // Positioning context for the mobile navigation icon
+    position: relative;
+}
+
+.site-title {
+    font-size: 26px;
+    line-height: 56px;
+    letter-spacing: -1px;
+    margin-bottom: 0;
+    float: left;
+
+    &,
+    &:visited {
+        color: $grey-color-dark;
+    }
+}
+
+.site-nav {
+    float: right;
+    line-height: 56px;
+
+    .menu-icon {
+        display: none;
+    }
+
+    .page-link {
+        color: $text-color;
+        line-height: $base-line-height;
+
+        // Gaps between nav items, but not on the first one
+        &:not(:first-child) {
+            margin-left: 20px;
+        }
+    }
+
+    @include media($mobile) {
+        position: absolute;
+        top: 9px;
+        right: 30px;
+        background-color: $background-color;
+        border: 1px solid $grey-color-light;
+        border-radius: 5px;
+        text-align: right;
+
+        .menu-icon {
+            display: block;
+            float: right;
+            width: 36px;
+            height: 26px;
+            line-height: 0;
+            padding-top: 10px;
+            text-align: center;
+
+            > svg {
+                width: 18px;
+                height: 15px;
+
+                path {
+                    fill: $grey-color-dark;
+                }
+            }
+        }
+
+        .trigger {
+            clear: both;
+            display: none;
+        }
+
+        &:hover .trigger {
+            display: block;
+            padding-bottom: 5px;
+        }
+
+        .page-link {
+            display: block;
+            padding: 5px 10px;
+        }
+    }
+}
+
+
+
+/**
+ * Site footer
+ */
+.site-footer {
+    border-top: 1px solid $grey-color-light;
+    padding: $spacing-unit 0;
+}
+
+.footer-heading {
+    font-size: 18px;
+    margin-bottom: $spacing-unit / 2;
+}
+
+.contact-list,
+.social-media-list {
+    list-style: none;
+    margin-left: 0;
+}
+
+.footer-col-wrapper {
+    font-size: 14px;
+    color: $grey-color;
+    @include clearfix;
+}
+
+.footer-col {
+    float: left;
+    margin-bottom: $spacing-unit / 2;
+}
+
+.footer-col-1 {
+    @include span-columns(4);
+}
+
+.footer-col-2 {
+    @include span-columns(2);
+}
+
+.footer-col-3 {
+    @include span-columns(6);
+}
+
+@include media($tablet) {
+    .footer-col-1,
+    .footer-col-2 {
+        @include span-columns(4);
+    }
+
+    .footer-col-2 { @include omega; }
+
+    .footer-col-3 {
+        @include span-columns(8);
+    }
+}
+
+@include media($mobile) {
+    .footer-col {
+        @include span-columns(4);
+    }
+}
+
+
+
+/**
+ * Page content
+ */
+.page-content {
+    padding: $spacing-unit 0;
+}
+
+.page-heading {
+    font-size: 20px;
+}
+
+.post-list {
+    margin-left: 0;
+    list-style: none;
+
+    > li {
+        margin-bottom: $spacing-unit;
+    }
+}
+
+.post-meta {
+    font-size: $small-font-size;
+    color: $grey-color;
+}
+
+.post-link {
+    display: block;
+    font-size: 24px;
+}
+
+
+
+/**
+ * Posts
+ */
+.post-header {
+    margin-bottom: $spacing-unit;
+}
+
+.post-title {
+    font-size: 42px;
+    letter-spacing: -1px;
+    line-height: 1;
+
+    @include media($tablet) {
+        font-size: 36px;
+    }
+}
+
+.post-content {
+    margin-bottom: $spacing-unit;
+
+    h2 {
+        font-size: 32px;
+
+        @include media($tablet) {
+            font-size: 28px;
+        }
+    }
+
+    h3 {
+        font-size: 26px;
+
+        @include media($tablet) {
+            font-size: 22px;
+        }
+    }
+
+    h4 {
+        font-size: 20px;
+
+        @include media($tablet) {
+            font-size: 18px;
+        }
+    }
+}
+
+/*** index ***/
+
+h2 {
+    margin-top: $spacing-unit;
+    text-align: center;
+}
+
+#mission {
+    font-family: $serif-font-family;
+    color: darken($brand-color, 20%);
+    font-size: 1.2em;
+    padding: 0 5%;
+    text-align: center;
+    p { position: relative; }
+    p:before {
+        content: "“"
+    }
+    p:after {
+        content: "”"
+    }
+    p:after, p:before {
+        opacity: .1;
+    }
+}
+
+#what {
+    @include row;
+    ul { margin: 0 }
+    li {
+        @include span-columns(4);
+        @include media($mobile) { @include span-columns(4); }
+        @include media($tablet) { @include span-columns(4); }
+        height: 140px;
+        text-align: center;
+
+        i {
+            display: block;
+            height: 80px;
+            font-size: 70px;
+            @include media($tablet) {
+                height: 70px;
+                font-size: 60px;
+            }
+        }
+
+    }
+    li:nth-child(3n) { @include media($desktop) { @include omega; } }
+    li:nth-child(2n) { @include media($tablet) { @include omega; } }
+}
+
+#what--impact-prediction {
+    i {
+        // color: green;
+    }
+}
+#what--demand-prediction {
+    i {
+        // color: red;
+    }
+}
+
+#what--read-more {
+    text-align: center;
+}
+
+#who, #supporters {
+    @include row;
+    ul { margin: 0; }
+    li {
+        @include span-columns(4);
+        @include media($mobile) {
+            @include span-columns(4);
+        }
+
+        margin-bottom: $spacing-unit/2;
+        text-align: center;
+    }
+    li:nth-child(3n) { @include omega; }
+    .person--name {
+        display: block;
+    }
+    .person--organization {
+        &:before {
+            content: "@ ";
+        }
+    }
+    .person--organization, .person--role {
+        font-size: 0.8em;
+        color: $grey-color;
+    }
+
+    .person--image {
+        width: 100px;
+        border-radius: 100px;
+        border: 1px solid darken($brand-color, 20%);
+        margin-bottom: $spacing-unit/4;
+    }
+}
+
+#contact {
+    @include row;
+    #contact--organizations, #contact--organizations {
+        @include span-columns(6);
+        @include media($mobile) {
+            @include span-columns(4);
+        }
+    }
+    > div {
+        margin-bottom: $spacing-unit/2;
+    }
+}
+
+#newsletter {
+    form { padding: 0 }
+    #mc_embed_signup {
+        input.email, input.button {
+            display: inline;
+            @include media($mobile) {
+                display: block;
+                width: 100%;
+            }
+        }
+    }
+}
