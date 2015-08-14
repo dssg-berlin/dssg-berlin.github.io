@@ -118,7 +118,7 @@
  */
 .site-footer {
     padding: $spacing-unit 0;
-    background-color: $grey-color-light;
+    background-color: lighten($grey-color-light, 7%);
 }
 
 .footer-heading {
