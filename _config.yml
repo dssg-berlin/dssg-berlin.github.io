@@ -1,5 +1,6 @@
 # Site settings
-title: Data Science for Social Good Berlin
+title: DSSG Berlin
+longtitle: Data Science for Social Good Berlin
 email: contact@dssg-berlin.org
 volunteer_email: volunteer@dssg-berlin.org
 description: > # this means to ignore newlines until "baseurl:"
