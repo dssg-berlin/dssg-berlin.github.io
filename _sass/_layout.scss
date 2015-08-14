@@ -48,7 +48,7 @@
         }
     }
 
-    @include media($palm) {
+    @include media($mobile) {
         position: absolute;
         top: 9px;
         right: 30px;
@@ -115,51 +115,44 @@
 }
 
 .footer-col-wrapper {
-    font-size: 15px;
+    font-size: 14px;
     color: $grey-color;
-    margin-left: -$spacing-unit / 2;
     @include clearfix;
 }
 
 .footer-col {
     float: left;
     margin-bottom: $spacing-unit / 2;
-    padding-left: $spacing-unit / 2;
 }
 
 .footer-col-1 {
-    width: -webkit-calc(35% - (#{$spacing-unit} / 2));
-    width:         calc(35% - (#{$spacing-unit} / 2));
+    @include span-columns(4);
 }
 
 .footer-col-2 {
-    width: -webkit-calc(20% - (#{$spacing-unit} / 2));
-    width:         calc(20% - (#{$spacing-unit} / 2));
+    @include span-columns(2);
 }
 
 .footer-col-3 {
-    width: -webkit-calc(45% - (#{$spacing-unit} / 2));
-    width:         calc(45% - (#{$spacing-unit} / 2));
+    @include span-columns(6);
 }
 
-@include media($laptop) {
+@include media($tablet) {
     .footer-col-1,
     .footer-col-2 {
-        width: -webkit-calc(50% - (#{$spacing-unit} / 2));
-        width:         calc(50% - (#{$spacing-unit} / 2));
+        @include span-columns(4);
     }
 
+    .footer-col-2 { @include omega; }
+
     .footer-col-3 {
-        width: -webkit-calc(100% - (#{$spacing-unit} / 2));
-        width:         calc(100% - (#{$spacing-unit} / 2));
+        @include span-columns(8);
     }
 }
 
-@include media($palm) {
+@include media($mobile) {
     .footer-col {
-        float: none;
-        width: -webkit-calc(100% - (#{$spacing-unit} / 2));
-        width:         calc(100% - (#{$spacing-unit} / 2));
+        @include span-columns(4);
     }
 }
 
@@ -209,7 +202,7 @@
     letter-spacing: -1px;
     line-height: 1;
 
-    @include media($laptop) {
+    @include media($tablet) {
         font-size: 36px;
     }
 }
@@ -220,7 +213,7 @@
     h2 {
         font-size: 32px;
 
-        @include media($laptop) {
+        @include media($tablet) {
             font-size: 28px;
         }
     }
@@ -228,7 +221,7 @@
     h3 {
         font-size: 26px;
 
-        @include media($laptop) {
+        @include media($tablet) {
             font-size: 22px;
         }
     }
@@ -236,7 +229,7 @@
     h4 {
         font-size: 20px;
 
-        @include media($laptop) {
+        @include media($tablet) {
             font-size: 18px;
         }
     }
@@ -244,22 +237,44 @@
 
 /*** index ***/
 
-h2 { text-align: center; }
+h2 {
+    margin-top: $spacing-unit;
+    text-align: center;
+}
+
+#mission {
+    font-family: $serif-font-family;
+    color: darken($brand-color, 20%);
+    font-size: 1.2em;
+    padding: 0 5%;
+    text-align: center;
+    p { position: relative; }
+    p:before {
+        content: "“"
+    }
+    p:after {
+        content: "”"
+    }
+    p:after, p:before {
+        opacity: .1;
+    }
+}
 
 #what {
     @include row;
+    ul { margin: 0 }
     li {
         @include span-columns(4);
-        @include media($palm) { @include span-columns(4); }
-        @include media($laptop) { @include span-columns(4); }
-        height: 120px;
+        @include media($mobile) { @include span-columns(4); }
+        @include media($tablet) { @include span-columns(4); }
+        height: 140px;
         text-align: center;
 
         i {
             display: block;
             height: 80px;
             font-size: 70px;
-            @include media($laptop) {
+            @include media($tablet) {
                 height: 70px;
                 font-size: 60px;
             }
@@ -267,7 +282,7 @@ h2 { text-align: center; }
 
     }
     li:nth-child(3n) { @include media($desktop) { @include omega; } }
-    li:nth-child(2n) { @include media($laptop) { @include omega; } }
+    li:nth-child(2n) { @include media($tablet) { @include omega; } }
 }
 
 #what--impact-prediction {
@@ -281,23 +296,66 @@ h2 { text-align: center; }
     }
 }
 
-#who {
+#what--read-more {
+    text-align: center;
+}
+
+#who, #supporters {
     @include row;
+    ul { margin: 0; }
     li {
         @include span-columns(4);
-        @include media($palm) {
+        @include media($mobile) {
             @include span-columns(4);
         }
+
+        margin-bottom: $spacing-unit/2;
+        text-align: center;
     }
     li:nth-child(3n) { @include omega; }
+    .person--name {
+        display: block;
+    }
+    .person--organization {
+        &:before {
+            content: "@ ";
+        }
+    }
+    .person--organization, .person--role {
+        font-size: 0.8em;
+        color: $grey-color;
+    }
+
+    .person--image {
+        width: 100px;
+        border-radius: 100px;
+        border: 1px solid darken($brand-color, 20%);
+        margin-bottom: $spacing-unit/4;
+    }
 }
 
 #contact {
     @include row;
     #contact--organizations, #contact--organizations {
         @include span-columns(6);
-        @include media($palm) {
+        @include media($mobile) {
             @include span-columns(4);
+        }
+    }
+    > div {
+        margin-bottom: $spacing-unit/2;
+    }
+}
+
+#newsletter {
+    form { padding: 0 }
+    #mc_embed_signup {
+        input.email, input.button {
+            display: inline;
+            @include media($mobile) {
+                display: block;
+                width: 100%;
+            }
         }
     }
 }
