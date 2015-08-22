@@ -2,7 +2,6 @@
 
   <div class="wrapper">
 
-    <a class="site-title" href="{{ site.baseurl }}/">{{ site.title }}</a>
 
     <nav class="site-nav">
       <a href="#" class="menu-icon">
@@ -14,6 +13,7 @@
       </a>
 
       <div class="trigger">
+        <a class="page-link" href="https://medium.com/dssg-berlin-blog">Blog</a>
         {% for page in site.pages %}
           {% if page.navigation %}
           <a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
@@ -21,6 +21,10 @@
         {% endfor %}
       </div>
     </nav>
+
+    <div class="site-title-wrapper">
+      <a class="site-title" href="{{ site.baseurl }}/">{{ site.title }}</a>
+    </div>
 
   </div>
 

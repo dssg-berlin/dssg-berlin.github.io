@@ -1,6 +1,7 @@
 /**
  * Wrapper
  */
+
 .wrapper {
     @include outer-container;
     padding: 0 $spacing-unit/2;
@@ -17,14 +18,22 @@
     position: relative;
 }
 
+.site-title-wrapper {
+    display: block;
+    text-align: center;
+}
+
 .site-title {
     font-size: 30px;
     line-height: 56px;
     letter-spacing: -1px;
     margin-bottom: 0;
 
-    display: block;
+    display: inline-block;
     text-align: center;
+    &:hover {
+        text-decoration: none;
+    }
 
     &,
     &:visited {
