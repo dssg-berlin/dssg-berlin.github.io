@@ -103,64 +103,89 @@ layout: default
     <h2>Team</h2>
     <ul>
       <li>
-        <img class="person--image" src="http://www.gravatar.com/avatar/84f5912a9852026158bd2e8e78934112.jpg?s=100">
+        <img class="person--image" src='{{ "/images/bio-pics/chris.adams.100x100.jpg" | relative_url }}'>
+        <span class="person--name">Chris Adams</span>
+        <span class="person--role">Product Manager</span>
+      </li>
+      <li>
+        <img class="person--image" src='{{ "/images/bio-pics/jennifer.ahrens.100x100.jpg" | relative_url }}'>
+        <span class="person--name">Jennifer Ahrens</span>
+        <span class="person--role">Data Scientist</span>
+      </li>
+      <li>
+        <img class="person--image" src='{{ "/images/bio-pics/alicia.hickey.100x100.jpg" | relative_url }}'>
+        <span class="person--name">Alicia Hickey</span>
+        <span class="person--role">Data Scientist</span>
+      </li>
+      <li>
+        <img class="person--image" src='{{ "/images/bio-pics/daniel.kirsch.100x100.jpg" | relative_url }}'>
         <span class="person--name">Daniel Kirsch</span>
         <span class="person--role">Mathematiker</span>
       </li>
       <li>
-        <img class="person--image" src="http://www.gravatar.com/avatar/c8f31d6f82334aad4d2e13dd042bebad.jpg?s=100">
-        <span class="person--name">Marit Brademann</span>
-        <span class="person--role">&nbsp;</span>
-      </li>
-      <li>
-        <img class="person--image" src="http://www.gravatar.com/avatar/7ab688025c039f82f3afce080b4a4b6f.jpg?s=100">
-        <span class="person--name">Richard Lawrence</span>
+        <img class="person--image" src='{{ "/images/bio-pics/jana.kludas.100x100.jpg" | relative_url }}'>
+        <span class="person--name">Jana Kludas</span>
         <span class="person--role">Data Scientist</span>
       </li>
       <li>
-        <img class="person--image" src="http://www.gravatar.com/avatar/adb449494c5a555e7e7ece8d96768ce2.jpg?s=100">
-        <span class="person--name">Georg Walther</span>
-        <span class="person--role">PhD Bioinformatik</span>
+        <img class="person--image" src='{{ "/images/bio-pics/jannes.quer.100x100.jpg" | relative_url }}'>
+        <span class="person--name">Jannes Quer</span>
+        <span class="person--role">Data Scientist</span>
       </li>
       <li>
-        <img class="person--image" src="http://www.gravatar.com/avatar/ba37a064c3527de359546687f18a0433.jpg?s=100">
-        <span class="person--name">Jana Kludas</span>
-        <span class="person--role">PhD Machine Learning</span>
-      </li>
-      <li>
-        <img class="person--image" src="http://www.gravatar.com/avatar/ddf3c3f23e920c3e955926049d9f3537.jpg?s=100">
-        <span class="person--name">Patrick Baier</span>
-        <span class="person--role">PhD Informatik</span>
+        <img class="person--image" src='{{ "/images/bio-pics/katharina.rasch.100x100.jpg" | relative_url }}'>
+        <span class="person--name">Katharina Rasch</span>
+        <span class="person--role">Data Scientist</span>
       </li>
     </ul>
   </div>
+
 
   <div id="supporters">
-    <h2>Supporters</h2>
-    <ul>
-      <li>
-        <span class="person--name">Claudia Leißner</span>
-        <span class="person--role">Geschäftsführerin</span>
-        <span class="person--organization">Proboneo</span>
-      </li>
-      <li>
-        <span class="person--name">Dr. Alexander Weiß</span>
-        <span class="person--role">Head of Data Analytics</span>
-        <span class="person--organization">Trademob</span>
-      </li>
-      <li>
-        <span class="person--name">Klaas Bollhöfer</span>
-        <span class="person--role">Chief Data Scientist</span>
-        <span class="person--organization">The Unbelievable Machine Company</span>
-      </li>
-      <li>
-        <span class="person--name">Adam Drake</span>
-        <span class="person--role">Chief Data Officer</span>
-        <span class="person--organization">Skyscanner</span>
-      </li>
-    </ul>
-  </div>
-
+      <h2>Supporters</h2>
+      <ul>
+        <li>
+          <span class="person--name">Claudia Leißner</span>
+          <span class="person--role">Geschäftsführerin</span>
+          <span class="person--organization">Proboneo</span>
+        </li>
+        <li>
+          <!-- <img class="person--image" src="http://www.gravatar.com/avatar/c8f31d6f82334aad4d2e13dd042bebad.jpg?s=100"> -->
+          <span class="person--name">Marit Brademann</span>
+          <span class="person--role">&nbsp;</span>
+        </li>
+        <li>
+          <!-- <img class="person--image" src="http://www.gravatar.com/avatar/7ab688025c039f82f3afce080b4a4b6f.jpg?s=100"> -->
+          <span class="person--name">Richard Lawrence</span>
+          <span class="person--role">Data Scientist</span>
+        </li>
+        <li>
+          <!-- <img class="person--image" src="http://www.gravatar.com/avatar/adb449494c5a555e7e7ece8d96768ce2.jpg?s=100"> -->
+          <span class="person--name">Georg Walther</span>
+          <span class="person--role">PhD Bioinformatik</span>
+        </li>
+        <li>
+          <span class="person--name">Dr. Alexander Weiß</span>
+          <span class="person--role">Head of Data Analytics</span>
+          <span class="person--organization">Trademob</span>
+        </li>
+        <li>
+          <span class="person--name">Klaas Bollhöfer</span>
+          <span class="person--role">Chief Data Scientist</span>
+          <span class="person--organization">The Unbelievable Machine Company</span>
+        </li>
+        <li>
+          <span class="person--name">Adam Drake</span>
+          <span class="person--role">Chief Data Officer</span>
+          <span class="person--organization">Skyscanner</span>
+        </li>
+        <li>
+          <!-- <img class="person--image" src="http://www.gravatar.com/avatar/ddf3c3f23e920c3e955926049d9f3537.jpg?s=100"> -->
+          <span class="person--name">Patrick Baier</span>
+          <span class="person--role">PhD Informatik</span>
+        </li>
+      </ul>
+    </div>
   <!-- <h1 class="page-heading">Posts</h1>
 
   <ul class="post-list">
