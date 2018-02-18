@@ -1,1 +1,6 @@
+os: osx
+
+before_script:
+  - brew update && brew install hugo
+
 script: hugo --theme dssg
