@@ -1,3 +1,4 @@
+language: python
 os: osx
 
 before_script:
