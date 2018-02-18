@@ -5,7 +5,6 @@
 <title> </title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<link href="//cdn-images.mailchimp.com/embedcode/slim-081711.css" rel="stylesheet" type="text/css">
 
 <link rel="stylesheet" href="/css/font-awesome.min.css">
 <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700,400italic,700italic" rel='stylesheet' type='text/css'>
@@ -16,42 +15,67 @@
 
 
 
-<body class="w-100 sans-serif bg-white debug">
+<body class="w-100 sans-serif bg-white">
 
+<style>
+.what-we-do {
+    background: url(/images/front-page-pic-uncropped.png) no-repeat center center fixed;
+    background-size: cover;
+    
+}
+
+.bg-dssg-blue {
+background-color: rgba(0, 166, 248, 0.8)
+}
+
+.what-we-do h2, .what-we-do h3 {
+    text-shadow: 1px 1px  #777
+}
+
+</style>
 
 {{ partial "header.html" . }}
 
-<div class="w-100 bg-light-gray pa3">
+<div class="what-we-do w-100 bg-light-gray pa4">
 
-    <h2 class="lh-title f-headline">Data Science for Social Good</h2>
-    <h3 class="lh-title">We help solve data problems, by pairing non-profits with volunteer data scientists, at community events, hackathons
-    and bespoke projects</h3>
+    <h2 class="lh-title f-headline white pa1 pl2 pr2 bg-dssg-blue">Data Science for Social Good</h2>
+    <h3 class="lh-copy measure f3 white pa2 bg-dssg-blue">We help solve data problems, by pairing non-profits with volunteer data scientists, at community events, hackathons
+    and on bespoke projects</h3>
 </div>
 
 <div class="calls-to-action flex">
-    <div class="w-50 bg-white pa4">
+    <div class="w-50 bg-white pa4 pt2">
     
         <h4>For Data Professionals</h4>
+
+        <p class="f4">Use your hard earned skills to give back</p>
+        <p class="f4">Develop new skills on meaningful projects</p>
+        <p class="f4">Meet other nice people doing good in the world</p>
     
-        <a class="pa3 br3 bg-dark-blue white link" href="">
+        <a class="pa3 br3 bg-dssg-blue white link dib" href="">
             Volunteer with us
         </a>
     
     </div>
     
-    <div class="w-50-ns pa4 bg-light-gray">
+    <div class="w-50-ns pa4 pt2 bg-light-gray">
     
         <h4>For Non Profit Organisations</h4>
     
-        <a  class="pa3 br3 bg-dark-blue white link" href="">
+        <p class="f4">Learn how to use data more effectively for your mission</p>
+        <p class="f4">Find out what's possible with data science in your organisation</p>
+        <p class="f4"></p>
+
+        <a  class="pa3 br3 bg-dssg-blue white link dib" href="">
             Work with us on your project
         </a>
     
+
     </div>
 
 </div>
 
-<div class="updates flex">
+<div class="updates flex bt b--black-30">
 
     <div class="w-two-thirds pa4 bg-light-gray">
         <h3>Coming Events</h3>
@@ -82,8 +106,13 @@
                     <div style="position: absolute; left: -5000px;">
                         <input type="text" name="b_d47faa89afcb41f45a993addb_1ccfd13be6" tabindex="-1" value="">
                     </div>
-                    <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="Emailadresse" required="" class="w-100">
-                    <input type="submit" value="Join the newsletter" name="subscribe" id="mc-embedded-subscribe" class="button">
+                    <input
+                         class="input-reset pa2 f6 f5-l pv3 bn br2-ns"
+                        type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="Email adresss" required="" />
+                    <input 
+                         class="f6 f5-l button-reset pv3 tc bn bg-animate bg-dssg-blue white pointer br2-ns
+                        br--right-ns"
+                    type="submit" value="Join the newsletter" name="subscribe" id="mc-embedded-subscribe" />
                 </div>
             </form>
         </div>
@@ -96,48 +125,45 @@
 
             </div>
 
-            <div id="who">
+            <div id="who" class="w-100 pa4 center">
                 <h2>Team</h2>
-                <ul>
-                    <li>
-                        <img class="person--image" src='/images/bio-pics/chris.adams.100x100.jpg'>
-                        <span class="person--name">Chris Adams</span>
-                        <span class="person--role">Product Manager</span>
+                <ul class="flex flex-wrap list">
+                    <li class="w-25 center ma3 tc">
+                        <img class="br-100 dib ba b--dark-blue" src='/images/bio-pics/chris.adams.100x100.jpg'>
+                        
+                        <p class="f4 mb2 mt2">Chris Adams</p>
+                        <p class="f5 ma1 gray">Product Manager</p>
                     </li>
-                    <li>
-                        <img class="person--image" src='/images/bio-pics/jennifer.ahrens.100x100.jpg'>
-                        <span class="person--name">Jennifer Ahrens</span>
-                        <span class="person--role">Data Scientist</span>
+                    <li class="w-25 center ma3 tc"> 
+                        <img class="br-100 dib ba b--dark-blue" src='/images/bio-pics/jennifer.ahrens.100x100.jpg'>
+                        <p class="f4 mb2 mt2">Jennifer Ahrens</p>
+                        <p class="f5 ma1 gray">Data Scientist</p>
                     </li>
-                    <li>
-                        <img class="person--image" src='/images/bio-pics/alicia.hickey.100x100.jpg'>
-                        <span class="person--name">Alicia Hickey</span>
-                        <span class="person--role">Data Scientist</span>
+                    
+                    <li class="w-25 center ma3 tc">
+                        <img class="br-100 dib ba b--dark-blue" src='/images/bio-pics/daniel.kirsch.100x100.jpg'>
+                        <p class="f4 mb2 mt2">Daniel Kirsch</p>
+                        <p class="f5 ma1 gray">Mathematiker</p>
                     </li>
-                    <li>
-                        <img class="person--image" src='/images/bio-pics/daniel.kirsch.100x100.jpg'>
-                        <span class="person--name">Daniel Kirsch</span>
-                        <span class="person--role">Mathematiker</span>
+                    <li class="w-25 center ma3 tc">
+                        <img class="br-100 dib ba b--dark-blue" src='/images/bio-pics/jana.kludas.100x100.jpg'>
+                        <p class="f4 mb2 mt2">Jana Kludas</p>
+                        <p class="f5 ma1 gray">Data Scientist</p>
                     </li>
-                    <li>
-                        <img class="person--image" src='/images/bio-pics/jana.kludas.100x100.jpg'>
-                        <span class="person--name">Jana Kludas</span>
-                        <span class="person--role">Data Scientist</span>
+                    <li class="w-25 center ma3 tc">
+                        <img class="br-100 dib ba b--dark-blue" src='/images/bio-pics/jan.kyri.100x100.jpg'>
+                        <p class="f4 mb2 mt2">Jan Kyri</p>
+                        <p class="f5 ma1 gray">Data Freelancer</p>
                     </li>
-                    <li>
-                        <img class="person--image" src='/images/bio-pics/jan.kyri.100x100.jpg'>
-                        <span class="person--name">Jan Kyri</span>
-                        <span class="person--role">Data Freelancer</span>
+                    <li class="w-25 center ma3 tc">
+                        <img class="br-100 dib ba b--dark-blue" src='/images/bio-pics/jannes.quer.100x100.jpg'>
+                        <p class="f4 mb2 mt2">Jannes Quer</p>
+                        <p class="f5 ma1 gray">Data Scientist</p>
                     </li>
-                    <li>
-                        <img class="person--image" src='/images/bio-pics/jannes.quer.100x100.jpg'>
-                        <span class="person--name">Jannes Quer</span>
-                        <span class="person--role">Data Scientist</span>
-                    </li>
-                    <li>
-                        <img class="person--image" src='/images/bio-pics/katharina.rasch.100x100.jpg'>
-                        <span class="person--name">Katharina Rasch</span>
-                        <span class="person--role">Data Scientist</span>
+                    <li class="w-25 center ma3 tc">
+                        <img class="br-100 dib ba b--dark-blue" src='/images/bio-pics/katharina.rasch.100x100.jpg'>
+                        <p class="f4 mb2 mt2">Katharina Rasch</p>
+                        <p class="f5 ma1 gray">Data Scientist</p>
                     </li>
                 </ul>
             </div>
