@@ -22,7 +22,7 @@ newsletter_join_button = "Trete dem Newsletter bei"
 
     <p class="f4">Nutze deine Fähigkeiten und gib zurück</p>
     <p class="f4">Entwickeln Sie neue Fähigkeiten in sinnvollen Projekten</p>
-    <p class="f4">Meet other people doing good in the worldTriff andere Menschen, die in der Welt Gutes tun</p>
+    <p class="f4">Triff andere Menschen, die in der Welt Gutes tun</p>
 
     <a class="pa3 br3 bg-dssg-blue white link dib" href="">
         Freiwilligenarbeit mit uns
