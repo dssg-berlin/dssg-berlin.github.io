@@ -1,0 +1,29 @@
+<div class="w-third-ns w-100 pa4 bg-dark-gray white">
+
+    <h3>{{ .Params.newsletter_title }}</h3>
+
+    <p class="lh-copy">{{ .Params.newsletter_reassurance }}</p>
+    <p>
+        <small>{{ .Params.newsletter_hate_spam }}</small>
+    </p>
+
+    <div id="mc_embed_signup">
+        <form action="//dssg-berlin.us11.list-manage.com/subscribe/post?u=d47faa89afcb41f45a993addb&amp;id=1ccfd13be6" method="post"
+            id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate="">
+            <div id="mc_embed_signup_scroll">
+
+                <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                <div style="position: absolute; left: -5000px;">
+                    <input type="text" name="b_d47faa89afcb41f45a993addb_1ccfd13be6" tabindex="-1" value="">
+                </div>
+                <input class="input-reset pa2 f6 f5-l pv3 bn br2-ns" type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" 
+                placeholder="Email adresss"
+                    required="" />
+                <input class="f6 f5-l button-reset pv3 tc bn bg-animate bg-dssg-blue white pointer br2-ns br--right-ns" 
+                type="submit" name="subscribe" id="mc-embedded-subscribe"
+                value="{{ .Params.newsletter_join_button }}"
+                />
+            </div>
+        </form>
+    </div>
+</div>

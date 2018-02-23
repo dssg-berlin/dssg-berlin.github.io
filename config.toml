@@ -1,4 +1,16 @@
-baseURL = "http://example.org/"
+baseURL = "http://dssg-berlin.org/"
 languageCode = "en-us"
-title = "My New Hugo Site"
+title = "Data Science for Social Good"
 theme = "dssg"
+
+DefaultContentLanguage = "en"
+
+[languages]
+[languages.en]
+weight = 1
+copyright = "Creative Commons Attribution Share Alike 4.0"
+
+[languages.de]
+copyright = "Creative Commons Attribution Share Alike 4.0"
+title = "DSSG Fur Social Good"
+weight = 2

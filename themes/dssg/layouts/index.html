@@ -2,7 +2,7 @@
 
 
 <html lang="en">
-<title> </title>
+<title> DSSG Berlin</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
@@ -36,44 +36,10 @@ background-color: rgba(0, 166, 248, 0.8)
 
 {{ partial "header.html" . }}
 
-<div class="what-we-do w-100 bg-light-gray pa4">
+{{ .Content }}
 
-    <h2 class="lh-title f-headline white pa1 pl2 pr2 bg-dssg-blue">Data Science for Social Good</h2>
-    <h3 class="lh-copy measure f3 white pa2 bg-dssg-blue">We help solve data problems, by pairing non-profits with volunteer data scientists, at community events, hackathons
-    and on bespoke projects</h3>
-</div>
 
-<div class="calls-to-action flex-ns">
-    <div class="w-100 bg-white pa4 pt2">
-    
-        <h4>For Data Professionals</h4>
 
-        <p class="f4">Use your hard earned skills to give back</p>
-        <p class="f4">Develop new skills on meaningful projects</p>
-        <p class="f4">Meet other people doing good in the world</p>
-    
-        <a class="pa3 br3 bg-dssg-blue white link dib" href="">
-            Volunteer with us
-        </a>
-    
-    </div>
-    
-    <div class="w-100 pa4 pt2 bg-light-gray">
-    
-        <h4>For Non Profit Organisations</h4>
-    
-        <p class="f4">Learn how to use data more effectively for your mission</p>
-        <p class="f4">Find out what's possible with data science in your organisation</p>
-        <p class="f4">Insert third benefit we offer here</p>
-
-        <a  class="pa3 br3 bg-dssg-blue white link dib" href="">
-            Work with us on your project
-        </a>
-    
-
-    </div>
-
-</div>
 
 <div class="updates flex-ns bt b--black-30">
 
@@ -92,35 +58,8 @@ background-color: rgba(0, 166, 248, 0.8)
         </ul>
     </div>
     
-    <div class="w-third-ns w-100 pa4 bg-dark-gray white">
-    
-        <h3>Join our newsletter</h3>
+     {{ partial "newsletter.html" . }}
 
-        <p class="lh-copy">Stay up to date with the latest news and events from DSSG Berlin, with our monthly newsletter </p>
-        <p><small>We hate spam too. We'll only use your email for this newsletter.</small></p>
-
-        <div id="mc_embed_signup">
-            <form action="//dssg-berlin.us11.list-manage.com/subscribe/post?u=d47faa89afcb41f45a993addb&amp;id=1ccfd13be6" method="post"
-                id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate="">
-                <div id="mc_embed_signup_scroll">
-        
-                    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-                    <div style="position: absolute; left: -5000px;">
-                        <input type="text" name="b_d47faa89afcb41f45a993addb_1ccfd13be6" tabindex="-1" value="">
-                    </div>
-                    <input
-                         class="input-reset pa2 f6 f5-l pv3 bn br2-ns"
-                        type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="Email adresss" required="" />
-                    <input 
-                         class="f6 f5-l button-reset pv3 tc bn bg-animate bg-dssg-blue white pointer br2-ns
-                        br--right-ns"
-                    type="submit" value="Join the newsletter" name="subscribe" id="mc-embedded-subscribe" />
-                </div>
-            </form>
-        </div>
-    
-    
-    </div>
 
 </div>
 
