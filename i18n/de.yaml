@@ -1,0 +1,17 @@
+- id: newsletter_title
+  translation: Abonnieren Sie unseren Newsletter Abonnieren
+
+- id: newsletter_reassurance
+  translation: Bliben Sie auf dem Laufenden mit den neuesten Nachrichten und Veeranstaltungen von DSSG Berlin, mit unserem monatlichen Newsletter
+
+- id: newsletter_hate_spam
+  translation: Wir hassen auch Spam. Wir verwenden Ihre E-Mail nur für diesen Newsletter.
+
+- id: newsletter_join_button
+  translation: Trete dem Newsletter bei
+
+- id: footer_what_we_do
+  translation: Wir helfen bei der Lösung von Datenproblemen, indem wir gemeinnützige Organisationen mit freiwilligen Datenwissenschaftlern, bei Gemeindeveranstaltungen, Hackathons und bei maßgeschneiderten Projekten zusammenbringen
+
+- id: footer_dssg_elsewhere
+  translation: DSSG Berlin woanders

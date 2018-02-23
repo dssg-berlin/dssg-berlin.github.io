@@ -1,10 +1,3 @@
-+++
-newsletter_title = "Join our newsletter"
-newsletter_reassurance = "Stay up to date with the latest news and events from DSSG Berlin, with our monthly newsletter"
-newsletter_hate_spam = "We hate spam too. We'll only use your email for this newsletter."
-newsletter_join_button = "Join the newsletter"
-+++
-
 <div class="what-we-do w-100 bg-light-gray pa4">
     <h2 class="lh-title f-headline white pa1 pl2 pr2 bg-dssg-blue">
     Data Science for Social Good

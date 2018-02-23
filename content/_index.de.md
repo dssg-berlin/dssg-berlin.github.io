@@ -1,10 +1,3 @@
-+++
-newsletter_title = "Abonnieren Sie unseren Newsletter Abonnieren"
-newsletter_reassurance = "Bleiben Sie auf dem Laufenden mit den neuesten Nachrichten und Veranstaltungen von DSSG Berlin, mit unserem monatlichen Newsletter"
-newsletter_hate_spam = "Wir hassen auch Spam. Wir verwenden Ihre E-Mail nur für diesen Newsletter."
-newsletter_join_button = "Trete dem Newsletter bei"
-
-+++
 
 <div class="what-we-do w-100 bg-light-gray pa4">
     <h2 class="lh-title f-headline white pa1 pl2 pr2 bg-dssg-blue">
