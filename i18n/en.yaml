@@ -1,6 +1,9 @@
 - id: newsletter_title
   translation: Join our newsletter
 
+- id: coming_events
+  translation: Coming Events
+
 - id: newsletter_reassurance
   translation: Stay up to date with the latest news and events from DSSG Berlin, with our monthly newsletter
 
@@ -15,3 +18,4 @@
 
 - id: footer_dssg_elsewhere
   translation: DSSG Berlin elsewhere
+

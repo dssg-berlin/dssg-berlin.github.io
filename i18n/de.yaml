@@ -1,6 +1,9 @@
 - id: newsletter_title
   translation: Abonnieren Sie unseren Newsletter Abonnieren
 
+- id: coming_events
+  translation: Kommende Veranstaltungen
+
 - id: newsletter_reassurance
   translation: Bliben Sie auf dem Laufenden mit den neuesten Nachrichten und Veeranstaltungen von DSSG Berlin, mit unserem monatlichen Newsletter
 

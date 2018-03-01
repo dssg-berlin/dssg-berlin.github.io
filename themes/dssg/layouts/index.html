@@ -38,14 +38,11 @@ background-color: rgba(0, 166, 248, 0.8)
         <h3>Coming Events</h3>
 
         <ul class="list w-90 pl1">
-            <li>
-                <h4>DSSG Office hours - March 6th, Impact Hub Berlin</h4>
-                <p>If you work in an non-profit organisation, come along for a free advice session with a data scientist</p>
-            </li>
-            <li>
-                <h4>Data Science Speed Dating - Late March, venue TBA</h4>
-                <p class="lh-copy">We're putting on another night of matching volunteers to data problems brought along by NGOs. Interested? <a href="https://blog.dssg-berlin.org/data-science-speed-dating-in-berlin-9c75a44a5c00">See how our last event went</a> </p>
-            </li>
+             {{ range where .Data.Pages "Section" "events"  }}
+
+            <li>{{ .Title }}</li>
+             
+             {{ end }}    
         </ul>
     </div>
     
