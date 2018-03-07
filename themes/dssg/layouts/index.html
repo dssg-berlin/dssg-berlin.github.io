@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<title> DSSG Berlin</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="utf-8">
+
+<link rel="canonical" href="https://dssg-berlin.org/">
+<link rel="alternate" type="application/rss+xml" title="DSSG Berlin" href="https://dssg-berlin.org/feed.xml" />
+
+<link rel="stylesheet" href="https://unpkg.com/tachyons/css/tachyons.min.css">
+<link rel="stylesheet" href="/css/flag-icon.min.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css">
+
+
+
+<body class="w-100 sans-serif bg-white">
+
+<style>
+.what-we-do {
+    background: url(/images/front-page-pic-uncropped.jpg) no-repeat center center fixed;
+    background-size: cover;    
+}
+
+.bg-dssg-blue {
+background-color: rgba(0, 166, 248, 0.8)
+}
+
+.what-we-do h2, .what-we-do h3 {
+    text-shadow: 1px 1px  #777
+}
+
+</style>
+
+{{ partial "header.html" . }}
+
+{{ .Content }}
+
+<div class="updates flex-ns bt b--black-30">
+
+    
+
+    <div class="w-half-ns w-100 pa4 bg-white">
+        <h3>Upcoming Events</h3>
+
+        <ul class="list w-90 pl1">
+             {{ range where .Data.Pages "Section" "events"  }}
+
+            <li>{{ .Title }}</li>
+             
+             {{ end }}    
+        </ul>
+    </div>
+    
+    <div class="w-half-ns w-100 pa4 bg-light-gray">
+        <h3>Blog posts</h3>
+
+        <ul class="list w-90 pl1">
+             {{ range where .Data.Pages "Section" "events"  }}
+
+            <li>{{ .Title }}</li>
+             
+             {{ end }}    
+        </ul>
+    </div>
+
+</div>
+
+
+{{ partial "newsletter.html" . }}
+
+
+            <div id="who" class="w-100 pa4 center">
+                <h2>Team</h2>
+                <ul class="flex-ns flex-wrap list">
+                    <li class="w-25 center ma3 tc">
+                        <img class="br-100 dib ba b--dark-blue" src='/images/bio-pics/chris.adams.100x100.jpg'>
+                        
+                        <p class="f4 mb2 mt2">Chris Adams</p>
+                        <p class="f5 ma1 gray">Product Manager</p>
+                    </li>
+                    <li class="w-25 center ma3 tc"> 
+                        <img class="br-100 dib ba b--dark-blue" src='/images/bio-pics/jennifer.ahrens.100x100.jpg'>
+                        <p class="f4 mb2 mt2">Jennifer Ahrens</p>
+                        <p class="f5 ma1 gray">Data Scientist</p>
+                    </li>
+                    
+                    <li class="w-25 center ma3 tc">
+                        <img class="br-100 dib ba b--dark-blue" src='/images/bio-pics/daniel.kirsch.100x100.jpg'>
+                        <p class="f4 mb2 mt2">Daniel Kirsch</p>
+                        <p class="f5 ma1 gray">Mathematiker</p>
+                    </li>
+                    <li class="w-25 center ma3 tc">
+                        <img class="br-100 dib ba b--dark-blue" src='/images/bio-pics/jana.kludas.100x100.jpg'>
+                        <p class="f4 mb2 mt2">Jana Kludas</p>
+                        <p class="f5 ma1 gray">Data Scientist</p>
+                    </li>
+                    <li class="w-25 center ma3 tc pl6">
+                        <img class="br-100 dib ba b--dark-blue" src='/images/bio-pics/jan.kyri.100x100.jpg'>
+                        <p class="f4 mb2 mt2">Jan Kyri</p>
+                        <p class="f5 ma1 gray">Data Freelancer</p>
+                    </li>
+                    <li class="w-25 center ma3 tc">
+                        <img class="br-100 dib ba b--dark-blue" src='/images/bio-pics/jannes.quer.100x100.jpg'>
+                        <p class="f4 mb2 mt2">Jannes Quer</p>
+                        <p class="f5 ma1 gray">Data Scientist</p>
+                    </li>
+                    <li class="w-25 center ma3 tc pr6">
+                        <img class="br-100 dib ba b--dark-blue" src='/images/bio-pics/katharina.rasch.100x100.jpg'>
+                        <p class="f4 mb2 mt2">Katharina Rasch</p>
+                        <p class="f5 ma1 gray">Data Scientist</p>
+                    </li>
+                </ul>
+            </div>
+
+
+
+
+</div>
+    
+
+{{ partial "footer.html" . }}
+
+</body>
+
+</html>
