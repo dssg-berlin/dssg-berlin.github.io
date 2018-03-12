@@ -4,18 +4,21 @@
 - id: coming_events
   translation: Coming Events
 
-- id: newsletter_reassurance
-  translation: Stay up to date with the latest news and events from DSSG Berlin, with our monthly newsletter
+- id: newsletter_reassurance_l1
+  translation: Stay up to date with our monthly newsletter!
+
+- id: newsletter_reassurance_l2
+  translation: Receive information about new projects and events
 
 - id: newsletter_hate_spam
   translation: We hate spam too. We'll only use your email for this newsletter.
 
 - id: newsletter_join_button
-  translation: Join the newsletter
+  translation: Submit
 
 - id: footer_what_we_do
-  translation: We help solve data problems, by pairing non-profits with volunteer data scientists, at community events, hackathons and on bespoke projects
+  translation: We help to make use of data by pairing non-profits with volunteer data scientists at community events, hackathons and on bespoke projects.
 
 - id: footer_dssg_elsewhere
-  translation: DSSG Berlin elsewhere
+  translation: DSSG Berlin on...
 

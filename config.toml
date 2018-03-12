@@ -1,6 +1,6 @@
 baseURL = "http://dssg-berlin.org/"
 languageCode = "en-us"
-title = "Data Science for Social Good"
+title = "DSSG Berlin"
 theme = "dssg"
 
 DefaultContentLanguage = "en"
@@ -12,5 +12,5 @@ copyright = "Creative Commons Attribution Share Alike 4.0"
 
 [languages.de]
 copyright = "Creative Commons Attribution Share Alike 4.0"
-title = "DSSG Fur Social Good"
+title = "DSSG Berlin"
 weight = 2
