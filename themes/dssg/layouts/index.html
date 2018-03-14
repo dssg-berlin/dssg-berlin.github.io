@@ -35,38 +35,44 @@ background-color: rgba(0, 166, 248, 0.8)
 
 {{ .Content }}
 
-<div class="updates flex-ns bt b--black-30">
-
+<div class="w-100 pa4 center bg-dark-gray bt b--black-30  ">
     
-
-    <div class="w-half-ns w-100 pa4 bg-white">
-        <h3>Upcoming Events</h3>
-
-        <ul class="list w-90 pl1">
-             {{ range where .Data.Pages "Section" "events"  }}
-
-            <li>{{ .Title }}</li>
-             
-             {{ end }}    
-        </ul>
-    </div>
+    <h2 class="white">Staying up to date with DSSG Berlin</h2>
     
-    <div class="w-half-ns w-100 pa4 bg-light-gray">
-        <h3>Blog posts</h3>
+    <div class="flex-ns">
 
-        <ul class="list w-90 pl1">
-             {{ range where .Data.Pages "Section" "events"  }}
+        <div class="updates w-60 fl">
+            {{ partial "newsletter.html" . }}
+        </div>
+        
+        <div class="white w-30  pl5 bl b--white-30">
+            
+            <h3 class="f4 pv0 mv0 normal">Find us elsewhere</h3>
 
-            <li>{{ .Title }}</li>
-             
-             {{ end }}    
-        </ul>
+            <ul class="list pa0">
+                <li class="mv2">
+                    <h3 class="normal dtc ">
+                        <img class="v-mid" src="/images/logos/eventbrite_e_orange.png" style="height:1.5em;" alt="">
+                        <a href="https://www.eventbrite.de/o/data-science-for-social-good-berlin-12923757440" class="white">
+                            <span class="v-mid">See our coming events on eventbrite</span>
+                        </a>
+                    </h3>
+                </li>
+                <li class="mv2">
+                    <h3 class="normal dtc">
+                        <img class="v-mid" src="/images/logos/medium-monogram.svg" style="height:1.5em;" alt="">
+                        <a href="blog.dssg-berlin.org" class="white">
+                            <span class="v-mid">Read more about DSSG on Medium</span>
+                        </a>
+                    </h3>
+                </li>
+            </ul>
+        </div>
     </div>
-
 </div>
 
 
-{{ partial "newsletter.html" . }}
+
 
 
             <div id="who" class="w-100 pa4 center">
