@@ -22,7 +22,7 @@ background-color: rgba(0, 166, 248, 0.8)
 
 </style>
 
-{{ partial "header.html" . }}
+{{ partial "site-nav.html" . }}
 
 {{ .Content }}
 
@@ -35,17 +35,16 @@ background-color: rgba(0, 166, 248, 0.8)
         <div class="updates w-100 w-50-ns fl">
             {{ partial "newsletter.html" . }}
         </div>
-        
         <div class="white w-100 w-30-ns b--white-30">
             
-            <h3 class="f4 pv0 mv0 normal">Find us elsewhere</h3>
+            <h3 class="f4 pv0 mv0 normal">{{ i18n "homepage_dssg_elsewhere" }}</h3>
 
             <ul class="list pa0">
                 <li class="mv2">
                     <h3 class="normal dtc ">
                         <img class="v-mid" src="/images/logos/eventbrite_e_orange.png" style="height:1.5em;" alt="">
                         <a href="https://www.eventbrite.de/o/data-science-for-social-good-berlin-12923757440" class="white">
-                            <span class="v-mid">See our coming events on eventbrite</span>
+                            <span class="v-mid">{{ i18n "homepage_our_events" }}</span>
                         </a>
                     </h3>
                 </li>
@@ -53,7 +52,7 @@ background-color: rgba(0, 166, 248, 0.8)
                     <h3 class="normal dtc">
                         <img class="v-mid" src="/images/logos/medium-monogram.svg" style="height:1.5em;" alt="">
                         <a href="blog.dssg-berlin.org" class="white">
-                            <span class="v-mid">Read more about DSSG on Medium</span>
+                            <span class="v-mid">{{ i18n "homepage_our_content" }}</span>
                         </a>
                     </h3>
                 </li>

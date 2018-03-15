@@ -18,7 +18,7 @@
                 <li class="f4 mv2">Meet other people doing good in the world</li>
             </ul>
 
-        <a class="pa3 br3 bg-dssg-blue white link dib" href="">
+        <a class="pa3 br3 bg-dssg-blue white link dib" href="https://docs.google.com/forms/d/e/1FAIpQLSfkedtniSsT5p92e6D-iLXUoCYye2bU14GLV_fyrn1yBUBY6A/viewform">
             Volunteer
         </a>
     </div>
@@ -32,7 +32,7 @@
                 <li class="mv2 f4">Realize a project with the support of our network</li>
             </ul>
 
-        <a class="pa3 br3 bg-dssg-blue white link dib" href="">
+        <a class="pa3 br3 bg-dssg-blue white link dib" href="https://docs.google.com/forms/d/e/1FAIpQLSesQDC_0UFE9hhtadYNd64KR4E3uijNj9CDMCgK4WomRyRNjw/viewform">
             Submit project
         </a>
     </div>

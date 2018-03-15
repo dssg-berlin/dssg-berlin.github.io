@@ -18,7 +18,7 @@
                 <li class="f4">Triff andere Menschen, die Gutes tun</li>
             </ul>
 
-        <a class="pa3 br3 bg-dssg-blue white link dib" href="">
+        <a class="pa3 br3 bg-dssg-blue white link dib" href="https://docs.google.com/forms/d/e/1FAIpQLSesQDC_0UFE9hhtadYNd64KR4E3uijNj9CDMCgK4WomRyRNjw/viewform">
             Mitmachen
         </a>
     </div>
@@ -32,7 +32,7 @@
                 <li class="f4">Setzen Sie konkrete Projekte mit unserem Netzwerk um</li>
             </ul>
 
-        <a class="pa3 br3 bg-dssg-blue white link dib" href="">
+        <a class="pa3 br3 bg-dssg-blue white link dib" href="https://docs.google.com/forms/d/e/1FAIpQLSesQDC_0UFE9hhtadYNd64KR4E3uijNj9CDMCgK4WomRyRNjw/viewform">
             Projekt einreichen
         </a>
 
