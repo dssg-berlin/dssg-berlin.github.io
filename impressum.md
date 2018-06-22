@@ -6,8 +6,8 @@ permalink: /impressum/
 ---
 
 Daniel Kirsch<br>
-Oppelner Str. 33<br>
-10997 Berlin
+Heinrich-Heine-Platz 12b<br>
+10179 Berlin
 
 Telefon +49 151 15729370<br>
 Email mail@danielkirs.ch
