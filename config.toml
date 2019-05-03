@@ -1,0 +1,16 @@
+baseURL = "http://dssg-berlin.org/"
+languageCode = "en-us"
+title = "DSSG Berlin"
+theme = "dssg"
+
+DefaultContentLanguage = "en"
+
+[languages]
+[languages.en]
+weight = 1
+copyright = "Creative Commons Attribution Share Alike 4.0"
+
+[languages.de]
+copyright = "Creative Commons Attribution Share Alike 4.0"
+title = "DSSG Berlin"
+weight = 2

@@ -1,0 +1,33 @@
+- id: newsletter_title
+  translation: Newsletter
+
+- id: coming_events
+  translation: Kommende Veranstaltungen
+
+- id: newsletter_reassurance_l1
+  translation: Bleiben Sie mit unserem monatlichen Newsletter auf dem Laufenden! Wir informieren über neue Projekte und Veranstaltungen
+
+- id: newsletter_hate_spam
+  translation: Wir hassen Spam auch. Wir verwenden Ihre E-Mail nur für diesen Newsletter.
+
+- id: newsletter_join_button
+  translation: Anmelden
+
+- id: homepage_staying_updated
+  translation: Staying up to date with DSSG Berlin
+
+- id: homepage_dssg_elsewhere
+  translation: Find us elsewhere
+
+- id: homepage_our_events
+  translation: See our coming events on eventbrite
+
+- id: homepage_our_content
+  translation: Read more about DSSG on Medium
+
+
+- id: footer_what_we_do
+  translation: Wir helfen dabei Daten nutzbar zu machen, indem wir gemeinnützige Organisationen mit freiwilligen Datenwissenschaftlern bei Veranstaltungen, Hackathons und maßgeschneiderten Projekten zusammenbringen.
+
+- id: footer_dssg_elsewhere
+  translation: DSSG Berlin auf...
