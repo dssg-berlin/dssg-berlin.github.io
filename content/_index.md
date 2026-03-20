@@ -14,7 +14,7 @@ menu:
 </div>
 
 <div class="calls-to-action flex-ns">
-    <div class="w-100 bg-white pa4 pt2">
+<div class="w-100 bg-white pa4 pt2">
 
 <h2>Für Datenprofis</h2>
 
