@@ -13,11 +13,11 @@
         {{ range .Site.Menus.main }}
         <li><a class="site-nav-item{{if or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }} active{{end}}" href="{{ .URL }}" title="{{ .Title }}">{{ .Name }}</a></li>
         {{ end }}
-        <li><a href="http://blog.dssg-berlin.org" target="_new">Blog</a></li>
+        <!-- <li><a href="http://blog.dssg-berlin.org" target="_new">Blog</a></li> -->
       </ul>
       
       <ul id="site-nav-language-picker">
-      {{ if .Site.IsMultiLingual }}
+      {{ if hugo.IsMultilingual }}
         {{ range .Site.Languages }}
         {{ if eq . $.Site.Language }}
           <li><a href="#" class="active language">{{ .LanguageName }}</a></li>

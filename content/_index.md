@@ -16,37 +16,37 @@ menu:
 <div class="calls-to-action flex-ns">
     <div class="w-100 bg-white pa4 pt2">
 
-        <h2>Für Datenprofis</h2>
+<h2>Für Datenprofis</h2>
 
-            <ul>
-                <li class="mv2 f4">Nutze deine Fähigkeiten und gib zurück</li>
-                <li class="mv2 f4">Entwickele neue Fähigkeiten in sinnvollen Projekten</li>
-                <li class="mv2 f4">Triff andere Menschen, die Gutes tun</li>
-            </ul>
+<ul>
+<li class="mv2 f4">Nutze deine Fähigkeiten und gib zurück</li>
+<li class="mv2 f4">Entwickele neue Fähigkeiten in sinnvollen Projekten</li>
+<li class="mv2 f4">Triff andere Menschen, die Gutes tun</li>
+</ul>
 
-            <br /> <br />
+<br /> <br />
 
 
 
-        <a class="pa3 br3 bg-dssg-blue white link dib" href="{{< ref "volunteer" >}}">
-            Mitmachen
-        </a>
-    </div>
-    <div class="w-100 bg-light-gray pa4 pt2">
+<a class="pa3 br3 bg-dssg-blue white link dib" href="{{< ref "volunteer" >}}">
+Mitmachen
+</a>
+</div>
+<div class="w-100 bg-light-gray pa4 pt2">
 
-        <h2>Für gemeinnützige Organisationen</h2>
+<h2>Für gemeinnützige Organisationen</h2>
 
-            <ul>
-                <li class="mv2 f4">Lernen Sie wie Sie Daten effektiv nutzen können</li>
-                <li class="mv2 f4">Erfahren Sie wie Sie Data Science sinnvoll einsetzen</li>
-                <li class="mv2 f4">Setzen Sie konkrete Projekte mit unserem Netzwerk um</li>
-            </ul>
+<ul>
+<li class="mv2 f4">Lernen Sie wie Sie Daten effektiv nutzen können</li>
+<li class="mv2 f4">Erfahren Sie wie Sie Data Science sinnvoll einsetzen</li>
+<li class="mv2 f4">Setzen Sie konkrete Projekte mit unserem Netzwerk um</li>
+</ul>
 
-            <br /> <br />
+<br /> <br />
 
-        <a class="pa3 br3 bg-dssg-blue white link dib" href="{{< ref "apply" >}}">
-            Datenberatung
-        </a>
+<a class="pa3 br3 bg-dssg-blue white link dib" href="{{< ref "apply" >}}">
+Datenberatung
+</a>
 
-    </div>
+</div>
 </div>

@@ -15,38 +15,38 @@ language: de
 </div>
 
 <div class="calls-to-action flex-ns">
-    <div class="w-100 bg-white pa4 pt2">
+<div class="w-100 bg-white pa4 pt2">
 
-        <h2>For Data Professionals</h2>
+<h2>For Data Professionals</h2>
 
-            <ul>
-                <li class="mv2 f4">Use your skills to give back</li>
-                <li class="mv2 f4">Develop new skills on meaningful projects</li>
-                <li class="mv2 f4">Meet other people doing good in the world</li>
-            </ul>
-
-
-            <br /> <br />
-
-        <a class="pa3 br3 bg-dssg-blue white link dib" href="{{< ref path="volunteer" >}}">
-            Volunteer
-        </a>
-    </div>
-    <div class="w-100 bg-light-gray pa4 pt2">
-
-        <h2>For Non Profit Organisations</h2>
-
-            <ul>
-                <li class="mv2 f4">Learn how to use your data effectively</li>
-                <li class="mv2 f4">Find out how to use data science to your benefit</li>
-                <li class="mv2 f4">Realize a project with the support of our network</li>
-            </ul>
+<ul>
+<li class="mv2 f4">Use your skills to give back</li>
+<li class="mv2 f4">Develop new skills on meaningful projects</li>
+<li class="mv2 f4">Meet other people doing good in the world</li>
+</ul>
 
 
-            <br /> <br />
+<br /> <br />
 
-        <a class="pa3 br3 bg-dssg-blue white link dib" href="{{< ref path="apply" >}}">
-            Get data advice
-        </a>
-    </div>
+<a class="pa3 br3 bg-dssg-blue white link dib" href="{{< ref path="volunteer" >}}">
+Volunteer
+</a>
+</div>
+<div class="w-100 bg-light-gray pa4 pt2">
+
+<h2>For Non Profit Organisations</h2>
+
+<ul>
+<li class="mv2 f4">Learn how to use your data effectively</li>
+<li class="mv2 f4">Find out how to use data science to your benefit</li>
+<li class="mv2 f4">Realize a project with the support of our network</li>
+</ul>
+
+
+<br /> <br />
+
+<a class="pa3 br3 bg-dssg-blue white link dib" href="{{< ref path="apply" >}}">
+Get data advice
+</a>
+</div>
 </div>

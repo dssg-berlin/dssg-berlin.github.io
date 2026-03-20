@@ -3,9 +3,7 @@ title: "Datenanalyse für den guten Zweck"
 date: 2018-11-27T15:58:46+01:00
 ---
 
-Data Science for Social Good Berlin unterstützt soziale Organisationen bei ihrer Arbeit mithilfe von &quot;Data Science&quot;. Uns fällt dabei immer wieder auf, dass soziale Organisationen zwar Begriffe wie &quot;Künstliche Intelligenz&quot;(KI), &quot;Big Data&quot; und &quot;Data Science&quot; kennen und schon einzelne Beispiele gesehen haben. Es fehlt ihnen aber oft an Orientierung, für welche Arten von Problemen Data-Science-Methoden geeignet sind.
-
-Darum haben wir die Vielzahl an [Beispielen](https://data4good.correlaid.org/), die es bereits gibt, anhand der Problemarten kategorisiert. Im Folgenden sind einige wichtige Kategorien beschrieben und anhand von Beispielen illustriert.
+Data Science for Social Good Berlin unterstützt soziale Organisationen bei ihrer Arbeit mithilfe von &quot;Data Science&quot;. Uns fällt dabei immer wieder auf, dass soziale Organisationen zwar Begriffe wie &quot;Künstliche Intelligenz&quot;(KI), &quot;Big Data&quot; und &quot;Data Science&quot; kennen und schon einzelne Beispiele gesehen haben. Es fehlt ihnen aber oft an Orientierung, für welche Arten von Problemen Data-Science-Methoden geeignet sind. Im Folgenden sind einige wichtige Kategorien beschrieben und anhand von Beispielen illustriert.
 
 ## Zielgruppen verstehen
 
