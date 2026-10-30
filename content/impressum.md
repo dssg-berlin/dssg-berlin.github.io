@@ -36,11 +36,9 @@ We will take all reasonable measures to ensure that data is corrected if you con
 
 We reserve the right to alter these terms at any time.
 
-If you have any questions about these Terms, please contact us at contact@dssg-berlin.org
+If you have any questions about these Terms, please contact us at dssgber@gmail.com
 
 # Legal Disclosure
-
-E-Mail: dssgber@gmail.com
 
 Angaben gemäß § 5 TMG
 DSSG Berlin e.V. <br/>
